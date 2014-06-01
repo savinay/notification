@@ -15,3 +15,13 @@ function hideNotification(e) {
     document.getElementById("notification")
         .style.display = "none";
 }
+
+function openFeedback() {
+    if(document.getElementById("feedback").style.display === "none"){
+        document.getElementById("feedback")
+        .style.display = "block";
+    } else {
+        document.getElementById("feedback")
+        .style.display = "none";
+    }
+}

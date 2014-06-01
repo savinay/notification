@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="./js/notification.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/notification.css">
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+        <title>Demo Feedback</title>
+    </head>
+    <body>
+        <a style="cursor: pointer" onclick="openFeedback()">
+        <div style="position: fixed; bottom:30px; right:20px;">
+            <span style="display: inline-block;
+            min-width: 20px;
+            padding: 10px 14px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1;
+            vertical-align: baseline;
+            white-space: nowrap;
+            text-align: center;
+            background-color: #5bc0de;
+            border-radius: 10px;">&#63;</span>
+        </div>
+        </a>
+        <div style="display: none" id="feedback">
+            <div class="col-md-4" style="bottom: 80px; position: fixed; right: 9px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title" style="text-align: center;">Send us a Message</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <textarea class="form-control" style="padding: 4px; height: 150px;"></textarea>
+                            <br>
+                            <input type="submit" value="Send Message" class="btn btn-sm btn-info btn-block" style="float: right;">
+                            <hr>
+                            <div style="text-align: center;">
+                                <small>Powered by UserJoy</small>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
